@@ -1,12 +1,15 @@
-# Getting Started with Create React App
+# Debate Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It displays
 
-## Available Scripts
+## Setup
 
-In the project directory, you can run:
+1. Run the following command in the terminal
 
-### `npm start`
+```npm install```
+
+2. Then, start the application using...
+```npm start```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
