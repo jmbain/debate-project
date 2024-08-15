@@ -1,0 +1,17 @@
+{
+    "topics": [
+        {
+            "id": 1,
+            "resolution": "Resolved: ABC",
+            "month": "September",
+            "year": 2024
+        },
+        {
+            "id": 2,
+            "resolution": "Resolved: ABC",
+            "month": "October",
+            "year": 2024
+        }
+
+    ]
+}
