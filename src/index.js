@@ -7,6 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import ErrorPage from './components/ErrorPage'
 import TAGS from "./Tags"
+import DetailedSearch from './components/DetailedSearch';
+import DetailedTagFilter from './components/DetailedTagFilter';
+import DetailedTopicList from './components/DetailedTopicList';
+import TopicContent from './components/TopicContent';
+import DetailedSearchPage from "./components/DetailedSearchPage"
 
 const router = createBrowserRouter([
   {
@@ -15,12 +20,16 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children: [
       {
-        path:"/",
+        path:"/quicksearch",
         element: <h1>Here is the Home Page</h1>
       },
       {
-        path:"/topicdetail",
-        element: <h1>Here is the topic detail page</h1>
+        path:"/topicdetail:id",
+        element: <TopicContent/>
+      },
+      {
+        path:"/detailsearch",
+        element: <DetailedSearchPage/>
       }
     ]
   }

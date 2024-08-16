@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react'
 import Header from "./Header"
 import NavBar from "./NavBar"
 import QuickSearch from "./QuickSearch"
-import TopicList from "./TopicList"
+import TopicList from "./QuickTopicList"
 import QuickTagFilter from "./QuickTagFilter"
 
 
@@ -22,9 +22,6 @@ function App() {
     <div className="App">
       <Header/>
       <NavBar/>
-      <QuickTagFilter/>
-      <QuickSearch/>
-      <TopicList/>
     </div>
   );
 }
