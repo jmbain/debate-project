@@ -4,12 +4,25 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import ErrorPage from './components/ErrorPage'
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App/>,
+    errorElement: <ErrorPage/>,
+    children: [
+      {
+        path:"/",
+        element: <h1>Here is the Home Page</h1>
+      },
+      {
+        path:"/topicdetail",
+        element: <h1>Here is the topic detail page</h1>
+      }
+    ]
   }
 ])
 

@@ -1,17 +1,41 @@
 {
+    "tags": ["Domestic", "Foreign", "International", "Social", "Economic", "Military"],
     "topics": [
         {
             "id": 1,
             "resolution": "Resolved: ABC",
             "month": "September",
-            "year": 2024
+            "year": 2024,
+            "tag-1": "Domestic",
+            "tag-2":"Social",
+            "tag-3": "",
+            "pro-framework": "Framing",
+            "pro-contention-1": "Blah",
+            "pro-contention-2": "Blah Blah",
+            "pro-contention-3": "Blah Blah Blah",
+            "con-framework": "Framing",
+            "con-contention-1": "Blah",
+            "con-contention-2": "Blah Blah",
+            "con-contention-3": "Blah Blah Blah"
         },
         {
             "id": 2,
             "resolution": "Resolved: ABC",
             "month": "October",
-            "year": 2024
+            "year": 2024,
+            "tag-1": "International",
+            "tag-2":"Domestic",
+            "tag-3": "",
+            "pro-framework": "Framing",
+            "pro-contention-1": "Blah",
+            "pro-contention-2": "Blah Blah",
+            "pro-contention-3": "Blah Blah Blah",
+            "con-framework": "Framing",
+            "con-contention-1": "Blah",
+            "con-contention-2": "Blah Blah",
+            "con-contention-3": "Blah Blah Blah"
         }
 
     ]
+
 }
