@@ -1,11 +1,8 @@
-import logo from '../logo.svg';
 import '../index.css';
 import {useEffect, useState} from 'react'
 import Header from "./Header"
 import NavBar from "./NavBar"
-import QuickSearch from "./QuickSearch"
-import TopicList from "./QuickTopicList"
-import QuickTagFilter from "./QuickTagFilter"
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
@@ -22,6 +19,7 @@ function App() {
     <div className="App">
       <Header/>
       <NavBar/>
+      <Outlet/>
     </div>
   );
 }

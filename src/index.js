@@ -6,12 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import ErrorPage from './components/ErrorPage'
+
 import TAGS from "./Tags"
-import DetailedSearch from './components/DetailedSearch';
-import DetailedTagFilter from './components/DetailedTagFilter';
-import DetailedTopicList from './components/DetailedTopicList';
 import TopicContent from './components/TopicContent';
 import DetailedSearchPage from "./components/DetailedSearchPage"
+import QuickSearchPage from './components/QuickSearchPage';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path:"/quicksearch",
-        element: <h1>Here is the Home Page</h1>
+        element: <QuickSearchPage/>
       },
       {
         path:"/topicdetail:id",

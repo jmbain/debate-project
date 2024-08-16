@@ -2,7 +2,7 @@
 
 function QuickTagFilter() {
     return (
-        <h5>Here is the Quick Search component that filters the Topic List</h5>
+        <h4>Here is the Quick Search component that filters the Topic List by clicking Domestic or International buttons</h4>
     )
 }
 
