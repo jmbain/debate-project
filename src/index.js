@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import ErrorPage from './components/ErrorPage'
-
+import TAGS from "./Tags"
 
 const router = createBrowserRouter([
   {

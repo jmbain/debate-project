@@ -1,0 +1,1 @@
+export const TAGS = ["Domestic", "Foreign", "International", "Social", "Economic", "Military"];
