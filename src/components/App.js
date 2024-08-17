@@ -15,11 +15,13 @@ function App() {
     .then(topicsData => setTopics(topicsData))
   },[])
   
+  console.log(topics)
+
   return (
     <div className="App">
       <Header/>
       <NavBar/>
-      <Outlet/>
+      <Outlet context={{topics: topics}} />
     </div>
   );
 }

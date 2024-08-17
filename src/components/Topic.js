@@ -1,8 +1,10 @@
 
 
-function Topic() {
+function Topic({topic}) {
     return (
-        <h6>Here is a Topic!</h6>
+        <li className="topic">
+            <h6>{topic.resolution}</h6>
+        </li>
     )
 }
 
