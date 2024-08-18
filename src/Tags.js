@@ -1,1 +1,2 @@
-export const TAGS = ["Domestic", "Foreign", "International", "Social", "Economic", "Military"];
+export const QTAGS = ["Domestic", "International"];
+export const DTAGS =  ["Economics", "Education", "Elections", "Environment", "Foreign Policy", "Guns", "Healthcare", "Immigration", "Justice System", "Legal", "National Security", "Tech"]

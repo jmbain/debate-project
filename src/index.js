@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import ErrorPage from './components/ErrorPage'
 
-import TAGS from "./Tags"
+
 import TopicContent from './components/TopicContent';
 import DetailedSearchPage from "./components/DetailedSearchPage"
 import QuickSearchPage from './components/QuickSearchPage';
