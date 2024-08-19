@@ -5,8 +5,7 @@ import QuickTopicList from "./QuickTopicList";
 
 function QuickSearchPage() {
     return (
-        <div>
-            <h3>Here is the Quick Search Page!</h3>
+        <div className="quicksearchpage">
             <QuickTagFilter/>
             <QuickSearch/>
             <QuickTopicList/>

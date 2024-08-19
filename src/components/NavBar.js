@@ -1,8 +1,12 @@
-
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
     return (
-        <h1>Here is the NavBar component that will be present on every page</h1>
+        <nav className="navbar">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/quicksearch">Quick Search</NavLink>
+            <NavLink to="/detailsearch">Detailed Search</NavLink>
+        </nav>
     )
 }
 

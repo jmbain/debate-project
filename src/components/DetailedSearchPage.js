@@ -4,7 +4,7 @@ import DetailedTopicList from "./DetailedTopicList";
 
 function DetailedSearchPage() {
     return (
-        <div>
+        <div className="detailedsearchpage">
             <DetailedTagFilter/>
             <DetailedSearch/>
             <DetailedTopicList/>

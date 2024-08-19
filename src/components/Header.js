@@ -2,7 +2,7 @@
 
 function Header() {
     return (
-        <h1>Here is the Header that displays on all pages</h1>
+        <h1 className="header">Debatabase</h1>
     )
 }
 

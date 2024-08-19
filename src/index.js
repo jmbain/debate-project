@@ -30,10 +30,10 @@ const router = createBrowserRouter([
         path:"/detailsearch",
         element: <DetailedSearchPage/>
       },
-      {
-        path:"detailsearch/topicdetail/:id",
-        element: <TopicContent/>
-      }
+      // {
+      //   path:"detailsearch/topicdetail/:id",
+      //   element: <TopicContent/>
+      // }
     ]
   }
 ])
