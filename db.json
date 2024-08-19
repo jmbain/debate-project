@@ -1,5 +1,4 @@
 {
-    
     "topics": [
         {
             "id": 1,
@@ -7,16 +6,16 @@
             "month": "September",
             "year": 2024,
             "qtag": "Domestic",
-            "dtag":"Social",
-            "tag-3": "",
-            "pro-framework": "Framing",
-            "pro-contention-1": "Blah",
-            "pro-contention-2": "Blah Blah",
-            "pro-contention-3": "Blah Blah Blah",
-            "con-framework": "Framing",
-            "con-contention-1": "Blah",
-            "con-contention-2": "Blah Blah",
-            "con-contention-3": "Blah Blah Blah"
+            "dtag1":"Social",
+            "dtag2": "",
+            "proframework": "Framing",
+            "procontention1": "Blah",
+            "procontention2": "Blah Blah",
+            "procontention3": "Blah Blah Blah",
+            "conframework": "Framing",
+            "concontention1": "Blah",
+            "concontention2": "Blah Blah",
+            "concontention3": "Blah Blah Blah"
         },
         {
             "id": 2,

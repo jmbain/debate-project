@@ -23,12 +23,16 @@ const router = createBrowserRouter([
         element: <QuickSearchPage/>
       },
       {
-        path:"/topicdetail:id",
+        path:"quicksearch/topicdetail/:id",
         element: <TopicContent/>
       },
       {
         path:"/detailsearch",
         element: <DetailedSearchPage/>
+      },
+      {
+        path:"detailsearch/topicdetail/:id",
+        element: <TopicContent/>
       }
     ]
   }

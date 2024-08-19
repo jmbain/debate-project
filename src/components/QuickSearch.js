@@ -10,7 +10,7 @@ function QuickSearch() {
 
     return (
         <div className="quickSearchBar">
-            <label htmlFor="quickSearch">Quick Topic Search</label>
+            <label htmlFor="quickSearch" className="quickSearchLabel">Quick Topic Search</label>
             <input
                 type="text"
                 id="quickSearch"
