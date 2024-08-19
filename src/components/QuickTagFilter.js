@@ -15,13 +15,12 @@ function QuickTagFilter() {
                 </button>
     })
 
-    function handleClick(){
-        console.log("Clicked!")
+    function handleClick(event){
+        console.log(event.target.value)
     }
 
     return (
         <div className="qTags">
-            <h4>Here is the Quick Search component that filters the Topic List by clicking Domestic or International buttons</h4>
             {quickFilterButtonElements}
         </div>
         

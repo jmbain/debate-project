@@ -9,6 +9,7 @@ function App() {
   
   const [topics,setTopics] = useState([])
   const [selectedQTag, setSelectedQTag] = useState("All")
+  const [selectedDTag, setSelectedDTag] = useState("All")
 
   useEffect(() => {
     fetch("http://localhost:4020/topics")

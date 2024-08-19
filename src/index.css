@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://worddreams.wordpress.com/wp-content/uploads/2015/01/kozzi-clip_art_of_a_speech_podium-1949x1949.jpg");
+  background-size: 1000px auto;
 }
 
 code {
@@ -14,16 +16,54 @@ code {
 
 .App {
   text-align: center;
+
 }
 
 .qTags button {
-  border-radius: 10px;
-  background: #c3c3c3;
-  color: #1a1a1a;
+  border-radius: 8px;
+  background: #ffffff80;
+  color: #000000;
   font-weight: bold;
   border: black solid 1px;
   cursor: pointer;
-  width: 20%;
-  height: 2rem;
+  width: 15%;
+  height: 1.5rem;
   margin: 1%;
+}
+
+.qTags button:hover {
+  transform: scale(1.1);
+}
+
+.dTags button {
+  border-radius: 8px;
+  background: #ffffff80;
+  color: #000000;
+  font-weight: bold;
+  border: black solid 1px;
+  cursor: pointer;
+  width: 15%;
+  height: 1.5rem;
+  margin: 1%;
+}
+
+.dTags button:hover {
+  transform: scale(1.1);
+}
+
+.topic {
+  border-radius: 8px;
+  background: #ffffff80;
+  color: #000000;
+  font-weight: bold;
+  border: black solid 1px;
+  width: 80%;
+  height: auto;
+  margin: 1%;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.topic:hover {
+  transform: translate(25px, 0px)
 }

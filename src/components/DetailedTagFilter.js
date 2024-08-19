@@ -2,12 +2,28 @@ import { useOutletContext } from "react-router-dom";
 
 function DetailedTagFilter() {
     
-    const{detailedFilterTags} = useOutletContext()
+    const{detailedFilterTags, selectedDTag, setSelectedDTag} = useOutletContext()
     console.log(detailedFilterTags)
 
+    const detailedFilterButtonElements = detailedFilterTags.map(tag => {
+        return <button
+                    key={tag}
+                    className={selectedDTag===tag? "selected" : ""}
+                    onClick={handleClick}
+                    value={tag}>
+                        {tag}
+                </button>
+})
+
+    function handleClick(event){
+        console.log(event.target.value)
+    }
 
     return (
-        <h3>Here is the Detailed Search page that includes a ContentList component that displays relevant TopicContent details and a more targeted ContentSearch </h3>
+        <div className="dTags">
+            {detailedFilterButtonElements}
+        </div>
+
     )
 }
 
