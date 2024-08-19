@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function QuickTagFilter() {
     
     const{quickFilterTags, selectedQTag, setSelectedQTag} = useOutletContext()
-    console.log(quickFilterTags)    
+    // console.log(quickFilterTags)    
 
     const quickFilterButtonElements = quickFilterTags.map(tag => {
         return <button

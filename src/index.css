@@ -74,6 +74,9 @@ code {
   margin: 5px;
   list-style-type: none;
   cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+
 }
 
 .topic > a {
@@ -111,11 +114,14 @@ code {
 
 .proCase {
   text-align: left;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 .conCase {
   text-align: left;
-
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 .existingcontentcontainer {
@@ -136,4 +142,25 @@ code {
 .quick-topic-list {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.detailed-topic-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.editContentContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 5%;
+}
+
+.forminput {
+  width: 90%;
+  height: auto;
+  margin: 1%;
+}
+
+.contention {
+  margin-top: 3%;
 }

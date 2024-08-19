@@ -12,8 +12,7 @@ function DetailedTopicList() {
     
     return (
         <div>
-                    <h4>Here is the ContentList component that displays relevant TopicContent details and a more targeted ContentSearch </h4>
-                    <ol className="detailed-topic-list">{detailedTopicComponents}</ol>
+                <ol className="detailed-topic-list">{detailedTopicComponents}</ol>
         </div>
 
 

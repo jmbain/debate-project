@@ -29,6 +29,28 @@ function App() {
     .then(topicsData => setTopics(topicsData))
   },[])
   
+  function updateTopic(id, topicDataForUpdate) {
+    fetch(`http://localhost:4020/topics${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(topicDataForUpdate)
+    }
+    .then(r => r.json())
+    .then(updatedTopic => setTopics(topics => topics.map(topic => {
+      if(updatedTopic.id===topic.id) {
+        return updatedTopic
+      }
+      else{
+        return topic
+      }
+    })))
+
+    )
+  }
+
   // console.log(topics)
 
   return (
@@ -44,7 +66,8 @@ function App() {
         setSelectedQTag: setSelectedQTag,
         quickSearchText: quickSearchText,
         setQuickSearchText: setQuickSearchText,
-        quickFilterSearchTopics: quickFilterSearchTopics
+        quickFilterSearchTopics: quickFilterSearchTopics,
+        updateTopic: updateTopic
         }} />
     </div>
   );
