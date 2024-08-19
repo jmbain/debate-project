@@ -71,9 +71,13 @@ code {
   border: black solid 1px;
   width: 90%;
   height: auto;
-  margin: 1%;
+  margin: 5px;
   list-style-type: none;
   cursor: pointer;
+}
+
+.topic > a {
+  color: #000000;
 }
 
 .topic:hover {
@@ -114,11 +118,22 @@ code {
 
 }
 
-.topiccontentcontainer {
+.existingcontentcontainer {
   background: #ffffff80;
 }
 
 .casecontent {
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: auto auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.editContent {
+  position: fixed; bottom: 5%;
+}
+
+.quick-topic-list {
+  display: flex;
+  flex-direction: column-reverse;
 }
