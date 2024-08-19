@@ -1,9 +1,10 @@
 import { useOutletContext } from "react-router-dom";
+import { useEffect } from "react";
 
 function QuickTagFilter() {
     
     const{quickFilterTags, selectedQTag, setSelectedQTag} = useOutletContext()
-    console.log(quickFilterTags)
+    console.log(quickFilterTags)    
 
     const quickFilterButtonElements = quickFilterTags.map(tag => {
         return <button
@@ -16,7 +17,7 @@ function QuickTagFilter() {
     })
 
     function handleClick(event){
-        console.log(event.target.value)
+        setSelectedQTag(event.target.value)
     }
 
     return (
