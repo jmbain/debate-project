@@ -10,14 +10,18 @@ function App() {
   const [topics,setTopics] = useState([])
   const [selectedQTag, setSelectedQTag] = useState("All")
   const [selectedDTag, setSelectedDTag] = useState("All")
+  const [quickSearchText, setQuickSearchText] = useState("")
 
-  const quickFilterTopics = topics.filter(topic => {
+  const quickFilterButtonTopics = topics.filter(topic => {
     if(selectedQTag==="All") {
       return topic
     }
     return topic.qtag===selectedQTag
   })
 
+  const quickFilterSearchTopics = quickFilterButtonTopics.filter(topic => {
+    return topic.resolution.toUpperCase().includes(quickSearchText.toUpperCase())
+  })
 
   useEffect(() => {
     fetch("http://localhost:4020/topics")
@@ -35,10 +39,12 @@ function App() {
         topics: topics, 
         quickFilterTags: QTAGS, 
         detailedFilterTags: DTAGS, 
-        quickFilterTopics: quickFilterTopics,
+        // quickFilterTopics: quickFilterTopics,
         selectedQTag: selectedQTag,
         setSelectedQTag: setSelectedQTag,
-        
+        quickSearchText: quickSearchText,
+        setQuickSearchText: setQuickSearchText,
+        quickFilterSearchTopics: quickFilterSearchTopics
         }} />
     </div>
   );

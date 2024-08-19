@@ -4,9 +4,9 @@ import { useOutletContext } from "react-router-dom";
 
 function QuickTopicList() {
     
-    const {quickFilterTopics} = useOutletContext()
+    const {quickFilterSearchTopics} = useOutletContext()
     
-    const quickTopicComponents = quickFilterTopics.map(topic => {
+    const quickTopicComponents = quickFilterSearchTopics.map(topic => {
         return <Topic key={topic.id} topic={topic} />
     })
     
