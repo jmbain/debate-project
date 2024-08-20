@@ -12,6 +12,7 @@ import TopicContent from './components/TopicContent';
 import DetailedSearchPage from "./components/DetailedSearchPage"
 import QuickSearchPage from './components/QuickSearchPage';
 
+
 const router = createBrowserRouter([
   {
     path: "/",

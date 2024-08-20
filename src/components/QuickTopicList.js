@@ -8,7 +8,6 @@ function QuickTopicList() {
     
     const quickTopicComponents = quickFilterSearchTopics.map(topic => {
         
-        
         return <Topic key={topic.id} topic={topic} />
     })
     

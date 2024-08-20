@@ -4,8 +4,7 @@ import { useParams, useOutletContext } from "react-router-dom";
 function TopicContent() {
     
     const [topic, setTopic] = useState(null)
-    const [newProContentForm, setNewProContentForm] = useState("")
-    
+    // const [newProContentForm, setNewProContentForm] = useState("")
     const [editFormData, setEditFormData] = useState({
         proframework: "",
         procontention1: "",
@@ -33,6 +32,23 @@ function TopicContent() {
         })
     },[])
 
+    function handleEditProContSubmit(event) {
+        event.preventDefault()
+
+        console.log(event.target.value)
+    }
+
+    function handleEditConContSubmit(event) {
+        event.preventDefault()
+
+        console.log(event.target.value)
+    }
+
+    // console.log(topic)
+
+
+    // ______________Section below was initial infrastructure relating to adding a contention, however, deprioritized for now___________
+    // ______________ equivalent JSX is also commented out below_____________________
     // function handleNewProContSubmit(event) {
     //     event.preventDefault()
 
@@ -53,21 +69,6 @@ function TopicContent() {
     //     console.log(event.target.value)
     // }
 
-    function handleEditProContSubmit(event) {
-        event.preventDefault()
-
-        console.log(event.target.value)
-    }
-
-    function handleEditConContSubmit(event) {
-        event.preventDefault()
-
-        console.log(event.target.value)
-    }
-
-    // console.log(topic)
-
-    // Error was happening because I was returning JSX before the fetch actually sets the topicData
     if(topic!==null) {
         return (
             <div className="fulltopiccontentcontainer">

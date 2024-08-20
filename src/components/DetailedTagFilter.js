@@ -3,7 +3,7 @@ import { useOutletContext } from "react-router-dom";
 function DetailedTagFilter() {
     
     const{detailedFilterTags, selectedDTag, setSelectedDTag} = useOutletContext()
-    console.log(detailedFilterTags)
+    // console.log(detailedFilterTags)
 
     const detailedFilterButtonElements = detailedFilterTags.map(tag => {
         return <button
@@ -16,7 +16,7 @@ function DetailedTagFilter() {
 })
 
     function handleClick(event){
-        console.log(event.target.value)
+        setSelectedDTag(event.target.value)
     }
 
     return (

@@ -164,3 +164,9 @@ code {
 .contention {
   margin-top: 3%;
 }
+
+button.selected {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: azure;
+  border: azure solid 1px;
+}
