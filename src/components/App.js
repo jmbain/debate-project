@@ -11,6 +11,7 @@ function App() {
   const [selectedQTag, setSelectedQTag] = useState("All")
   const [quickSearchText, setQuickSearchText] = useState("")
   const [selectedDTag, setSelectedDTag] = useState("All")
+  const [detailedSearchText, setDetailedSearchText] = useState("")
 
   const quickFilterButtonTopics = topics.filter(topic => {
     if(selectedQTag==="All") {
@@ -28,6 +29,10 @@ function App() {
       return topic
     }
     return topic.dtag1===selectedDTag || topic.dtag2===selectedDTag
+  })
+
+  const detailedFilterSearchTopics = detailedFilterButtonTopics.filter(topic => {
+    return topic.procontention1.toUpperCase().includes(detailedSearchText.toUpperCase())
   })
 
   // const detailedFilterSearchTopics = quickFilterButtonTopics.filter(topic => {
@@ -82,6 +87,9 @@ function App() {
         selectedDTag: selectedDTag,
         setSelectedDTag, setSelectedDTag,
         detailedFilterButtonTopics: detailedFilterButtonTopics,
+        detailedSearchText: detailedSearchText,
+        setDetailedSearchText: setDetailedSearchText,
+        detailedFilterSearchTopics: detailedFilterSearchTopics,
         
         }} />
     </div>

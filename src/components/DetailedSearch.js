@@ -1,8 +1,24 @@
-
+import { useOutletContext } from "react-router-dom";
 
 function DetailedSearch() {
+    
+    const {detailedSearchText, setDetailedSearchText} = useOutletContext()
+    
+    function handleChange(event) {
+        setDetailedSearchText(event.target.value)
+    }
+    
     return (
-        <h4>Here is the Detailed Search page that includes a ContentList component that displays relevant TopicContent details and a more targeted ContentSearch </h4>
+        <div className="detailedSearchBar">
+        <label htmlFor="detailedSearch" className="detailedSearchLabel">Detailed Topic Search</label>
+        <input
+            type="text"
+            id="detailedSearch"
+            placehoder="Start typing content to search..."
+            value={detailedSearchText}
+            onChange={handleChange}
+        />
+    </div>
     )
 }
 

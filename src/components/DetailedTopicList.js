@@ -4,9 +4,9 @@ import { useOutletContext } from "react-router-dom";
 
 function DetailedTopicList() {
     
-    const {detailedFilterButtonTopics} = useOutletContext()
+    const {detailedFilterSearchTopics} = useOutletContext()
     
-    const detailedTopicComponents = detailedFilterButtonTopics.map(topic => {
+    const detailedTopicComponents = detailedFilterSearchTopics.map(topic => {
         return <Topic key={topic.id} topic={topic} />
     })
     
