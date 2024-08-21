@@ -6,7 +6,7 @@ function FunTopicList() {
     
     const {funTopics} = useOutletContext()
     
-    console.log(funTopics)
+    // console.log(funTopics)
 
     const funTopicComponents = funTopics.map(topic => {
         if(topic!==null) {

@@ -11,11 +11,11 @@ function Home() {
     let mostRecentTopicIndex = topics.length-1
     const currentTopic = topics[mostRecentTopicIndex]
 
-    console.log(funTopics)
+    // console.log(funTopics)
     let mostRecentFunTopicIndex = funTopics.length-1
     const currentFunTopic = funTopics[mostRecentFunTopicIndex]
-    console.log(mostRecentFunTopicIndex)
-    console.log(currentFunTopic)
+    // console.log(mostRecentFunTopicIndex)
+    // console.log(currentFunTopic)
 
     
     if(currentTopic!==undefined && currentFunTopic!==undefined) {
