@@ -13,6 +13,7 @@ import DetailedSearchPage from "./components/DetailedSearchPage"
 import QuickSearchPage from './components/QuickSearchPage';
 import FunTopicHomePage from './components/FunTopicPage';
 import Home from './components/Home';
+import FunTopicContent from './components/FunTopicContent';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/fun",
         element: <FunTopicHomePage/>
+      },
+      {
+        path: "fun/topicdetail/:id",
+        element: <FunTopicContent/>
       },
       {
         path:"/quicksearch",
