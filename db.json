@@ -1,4 +1,7 @@
 {
+    "funTopics": [
+        
+    ],
     "topics": [
         {
           "id": 1,
@@ -3097,7 +3100,7 @@
         {
           "id": 183,
           "resolution": "Resolved: The United States should establish a comprehensive bilateral trade agreement with the European Union.",
-          "month": "National",
+          "month": "Nationals",
           "year": 2024,
           "qtag": "International",
           "dtag1": "Foreign Policy",

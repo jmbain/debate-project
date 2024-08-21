@@ -11,7 +11,7 @@ import ErrorPage from './components/ErrorPage'
 import TopicContent from './components/TopicContent';
 import DetailedSearchPage from "./components/DetailedSearchPage"
 import QuickSearchPage from './components/QuickSearchPage';
-
+import Home from './components/Home';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +19,10 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement: <ErrorPage/>,
     children: [
+      {
+        path:"/home",
+        element: <Home/>
+      },
       {
         path:"/quicksearch",
         element: <QuickSearchPage/>

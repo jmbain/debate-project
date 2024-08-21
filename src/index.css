@@ -87,7 +87,7 @@ code {
   transform: translate(25px, 0px)
 }
 
-.quickSearchBar {
+.quickSearchBar, .detailedSearchBar {
   margin-left: 25%;
   margin-right: 25%;
   background: #ffffff80;

@@ -8,6 +8,7 @@ import {QTAGS, DTAGS} from "../Tags"
 function App() {
   
   const [topics,setTopics] = useState([])
+  const [funTopics, setFunTopics] =useState([])
   const [selectedQTag, setSelectedQTag] = useState("All")
   const [quickSearchText, setQuickSearchText] = useState("")
   const [selectedDTag, setSelectedDTag] = useState("All")
@@ -31,6 +32,8 @@ function App() {
     return topic.dtag1===selectedDTag || topic.dtag2===selectedDTag
   })
 
+
+  //__________NOTE DETAILED FILTER CURRENTLY ONLY LOOKS AT PROCONTENTION1_____________
   const detailedFilterSearchTopics = detailedFilterButtonTopics.filter(topic => {
     return topic.procontention1.toUpperCase().includes(detailedSearchText.toUpperCase())
   })
@@ -44,6 +47,18 @@ function App() {
     .then(r => r.json())
     .then(topicsData => setTopics(topicsData))
   },[])
+  
+  function addFunTopic(newFunTopic) {
+    fetch("http://localhost:4020/funTopics", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json" 
+       },
+       body: JSON.stringify({...newFunTopic})
+    })
+    .then(r => r.json())
+    .then(newFunTopic => setFunTopics([...funTopics,newFunTopic]))
+  }
   
   function updateTopic(id, topicDataForUpdate) {
     fetch(`http://localhost:4020/topics${id}`, {
@@ -90,7 +105,7 @@ function App() {
         detailedSearchText: detailedSearchText,
         setDetailedSearchText: setDetailedSearchText,
         detailedFilterSearchTopics: detailedFilterSearchTopics,
-        
+
         }} />
     </div>
   );
