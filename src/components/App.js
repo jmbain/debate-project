@@ -48,6 +48,12 @@ function App() {
     .then(topicsData => setTopics(topicsData))
   },[])
   
+  useEffect(() => {
+    fetch("http://localhost:4020/funTopics")
+    .then(r => r.json())
+    .then(funTopicsData => setFunTopics(funTopicsData))
+  },[])
+
   function addFunTopic(newFunTopic) {
     fetch("http://localhost:4020/funTopics", {
       method: "POST",
@@ -57,9 +63,10 @@ function App() {
        body: JSON.stringify({...newFunTopic})
     })
     .then(r => r.json())
-    .then(newFunTopic => setFunTopics([...funTopics,newFunTopic]))
+    .then(newFunTopic => setFunTopics([...funTopics, newFunTopic]))
   }
-  
+
+
   function updateTopic(id, topicDataForUpdate) {
     fetch(`http://localhost:4020/topics${id}`, {
       method: "PATCH",
@@ -105,6 +112,8 @@ function App() {
         detailedSearchText: detailedSearchText,
         setDetailedSearchText: setDetailedSearchText,
         detailedFilterSearchTopics: detailedFilterSearchTopics,
+        addFunTopic: addFunTopic,
+        funTopics: funTopics,
 
         }} />
     </div>

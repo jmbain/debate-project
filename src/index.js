@@ -11,6 +11,7 @@ import ErrorPage from './components/ErrorPage'
 import TopicContent from './components/TopicContent';
 import DetailedSearchPage from "./components/DetailedSearchPage"
 import QuickSearchPage from './components/QuickSearchPage';
+import FunTopicHomePage from './components/FunTopicPage';
 import Home from './components/Home';
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path:"/home",
         element: <Home/>
+      },
+      {
+        path: "/fun",
+        element: <FunTopicHomePage/>
       },
       {
         path:"/quicksearch",

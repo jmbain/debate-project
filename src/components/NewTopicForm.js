@@ -1,7 +1,12 @@
 import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
+
 
 function NewTopicForm() {
     
+    const {addFunTopic} = useOutletContext()
+    
+
     const [formData, setFormData] = useState({
         resolution: "",
         proframework: "",
@@ -21,7 +26,7 @@ function NewTopicForm() {
             ...formData
         }
 
-        console.log(newFunTopic)
+        addFunTopic(newFunTopic)
 
         setFormData({
             resolution: "",
@@ -42,7 +47,7 @@ function NewTopicForm() {
 
     return (
         <div className="addFunTopicContainer">
-            <h1 className="header">New Topic Form</h1>
+            <h1 className="header">Create a New Topic!</h1>
             <form className="addNewTopic" onSubmit={handleSubmit} >
                 <input onChange={updateFunTopicData} value={formData.resolution} className="forminput" type="text" name="resolution" placeholder="New Topic Resolution"/>
                 <input onChange={updateFunTopicData} value={formData.proframework} className="forminput" type="text" name="proframework" placeholder="Pro Framework"/>
@@ -53,7 +58,7 @@ function NewTopicForm() {
                 <input onChange={updateFunTopicData} value={formData.concontention1} className="forminput" type="text" name="concontention1" placeholder="Con Contention 1"/>
                 <input onChange={updateFunTopicData} value={formData.concontention2} className="forminput" type="text" name="concontention2" placeholder="Con Contention 2"/>
                 <input onChange={updateFunTopicData} value={formData.concontention3} className="forminput" type="text" name="concontention3" placeholder="Con Contention 3"/>
-                <button type="submit">Save Changes</button>
+                <button type="submit">Add a New Fun Topic</button>
             </form>
         </div>
     )
